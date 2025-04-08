@@ -7,17 +7,17 @@ const Header = () => {
     <header className="sticky top-0 bg-light-gray dark:bg-deep-navy">
       <div className="px-2 sm:px-8 lg:container text-navy-text dark:text-white text-sm sm:text-lg relative flex flex-row justify-between">
         <Link href={`/`} className="custom-continer py-2 flex justify-start items-center text-sm sm:text-lg lg:text-xl lg:justify-between">
-          Page Title
+          Comedy for Change
         </Link>
         <div className="custom-continer py-2 flex justify-end items-center lg:justify-between">
             <Link href={`/`} className="pr-2">
               Home
             </Link>
             <Link href={`/posts`} className="px-2">
-              Comedian List
+              About
             </Link>
             <Link href={'/guestbook'} className="px-2">
-              Option 3
+              Comedian List
             </Link>
             <div className="pl-2">
                 <ThemeToggle/>

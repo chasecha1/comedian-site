@@ -3,6 +3,7 @@ import { ComedianProfile } from "../../types/entities"
 import Image from "next/image";
 import { urlFor } from '@/sanity/sanityImage';
 import { useState } from "react";
+import Link from "next/link";
 import { PortableText } from "next-sanity";
 
 
@@ -48,7 +49,7 @@ const ComedianList = ({comedians} :ComedianProps) => {
             onClick={() => toggleKeyword(keyword)}
             className={`px-4 py-2 rounded-full border transition ${
               selectedKeywords.includes(keyword)
-                ? 'bg-navy text-white border-navy'
+                ? 'bg-white dark:bg-light-navy text-deep-navy dark:text-white border-navy'
                 : 'bg-light-navy dark:bg-white text-white dark:text-deep-navy border-navy hover:bg-navy hover:text-white'
             }`}
           >
@@ -69,7 +70,9 @@ const ComedianList = ({comedians} :ComedianProps) => {
               </div>
               <div className="Card-bottom flex flex-col items-center">
                 <div className="Title text-lg lg:text-desc justify-center pb-2">
-                  <p>{comedian.name}</p>
+                  <Link href={`/${comedian.slug.current}`} className="Link--secondary">
+                    {comedian.name}
+                  </Link>
                 </div>
                 <div className="description mx-8 pb-4">
                   {/* <PortableText value={comedian.bio}/> */}
