@@ -57,9 +57,9 @@ const ComedianList = ({comedians} :ComedianProps) => {
           </button>
         ))}
       </div>
-      <div className="Card-containers flex flex-col lg:flex-row justify-center pb-8 px-2 lg:px-8 text-navy-text dark:text-white">
+      <div className="Card-containers grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4 mx-8 text-navy-text dark:text-white">
         {comedianList && filteredComedians.map((comedian: ComedianProfile) => (
-            <div className="Comedian-Card shadow-brand-box dark:shadow-brand-box-navy pb-4 lg:pb-0 mb-8 lg:mb-2 mx-4" key={comedian._id}>
+            <div className="Comedian-Card shadow-brand-box dark:shadow-brand-box-navy pb-4 lg:pb-0" key={comedian._id}>
               <div className="Media pb-4 flex justify-center">
                 <Image
                   src={urlFor(comedian.image).width(480).height(430).fit('crop').crop('top').url()}
