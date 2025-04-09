@@ -13,10 +13,10 @@ const Header = () => {
             <Link href={`/`} className="pr-2">
               Home
             </Link>
-            <Link href={`/posts`} className="px-2">
+            <Link href={`/`} className="px-2">
               About
             </Link>
-            <Link href={'/guestbook'} className="px-2">
+            <Link href={'/'} className="px-2">
               Comedian List
             </Link>
             <div className="pl-2">
