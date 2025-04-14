@@ -9,6 +9,9 @@ export type ComedianProfile = {
   };
   bio: TypedObject[],
   image: Image,
-  video: string,
+  video: {
+    url: string,
+    name: string,
+  },
   keywords: string[],
 }

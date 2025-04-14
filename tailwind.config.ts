@@ -121,7 +121,7 @@ const config: Config = {
             },      
           },
           lead: {
-            fontSize: "1.75rem",
+            fontSize: "2rem",
             lineHeight: "1.14",
             color: theme("colors.brand-secondary"),
             fontWeight: theme("fontWeight.normal"),
