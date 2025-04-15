@@ -17,7 +17,7 @@ const Hero = ({heroData} :HeroProps) => {
         <div className="Hero-title Heading--head text-pink-500 flex justify-center">
           Our Voice Comedy for Change Comedian Database
         </div>
-        <div className="flex flex-col lg:flex-row bg-white text-pink-500">
+        <div className="flex flex-col lg:flex-row bg-white text-black">
             <div className="Hero-image flex flex-col w-3/4 px-12 lg:px-20">
               <Image
                 src={urlFor(hero.image).width(480).height(430).fit('crop').crop('top').url()}

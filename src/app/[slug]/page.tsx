@@ -16,7 +16,7 @@ export default async function ComedianPage({ params }: ComedianPageProps) {
   const comedian = data[0]
 
   return (
-    <div className="bg-pink-50 text-pink-500 flex flex-col">
+    <div className="bg-white text-pink-500 flex flex-col">
       <div className="Comedian-Name Heading--head flex justify-center py-8">
         {comedian.name}
       </div>
@@ -33,19 +33,19 @@ export default async function ComedianPage({ params }: ComedianPageProps) {
           <div className="Heading--lead pb-2">
             Biography
           </div>
-          <div className="Comedian-bio pb-4">
+          <div className="Comedian-bio pb-4 text-black">
             <PortableText value={comedian.bio}/>
           </div>
           <div className="Heading--lead pb-2">
             Performance Videos
           </div>
-          <a href={comedian.video.url} className="Link--secondary pb-4" target="_blank" rel="noopener noreferrer">{comedian.video.name}</a>
+          <a href={comedian.video.url} className="Link--secondary pb-4 text-black" target="_blank" rel="noopener noreferrer">{comedian.video.name}</a>
           <div className="Heading--lead pb-2">
             Topics Addressed
           </div>
           <div>
             {comedian.keywords.map((keyword: string, index) => (
-              <div key={index}>
+              <div key={index} className="text-black">
                 {keyword}
               </div>
             ))}

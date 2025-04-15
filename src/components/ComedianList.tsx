@@ -77,7 +77,7 @@ const ComedianList = ({comedians} :ComedianProps) => {
                 <div className="description mx-8 pb-4">
                   {/* <PortableText value={comedian.bio}/> */}
                   {comedian.keywords.map((keyword: string, index) => (
-                    <div key={index}>
+                    <div key={index} className="text-black">
                       {keyword}
                     </div>
                   ))}
