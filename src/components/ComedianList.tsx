@@ -38,8 +38,8 @@ const ComedianList = ({comedians} :ComedianProps) => {
     : comedians;
 
   return (
-    <div className="ComedianList bg-white dark:bg-light-navy flex flex-col justify-center items-center">
-      <div className="Title Heading--head text-navy-text dark:text-white pt-8 pb-4">
+    <div className="ComedianList bg-pink-50 flex flex-col justify-center items-center">
+      <div className="Title Heading--head text-pink-600 pt-8 pb-4">
           Comedians
       </div>
       <div className="flex flex-wrap justify-center gap-2 mb-4">
@@ -49,17 +49,17 @@ const ComedianList = ({comedians} :ComedianProps) => {
             onClick={() => toggleKeyword(keyword)}
             className={`px-4 py-2 rounded-full border transition ${
               selectedKeywords.includes(keyword)
-                ? 'bg-white dark:bg-light-navy text-deep-navy dark:text-white border-navy'
-                : 'bg-light-navy dark:bg-white text-white dark:text-deep-navy border-navy hover:bg-navy hover:text-white'
+                ? 'bg-dark-pink text-white border-pink-900'
+                : 'bg-light-pink-bg text-dark-pink hover:bg-pink-300 hover:text-white'
             }`}
           >
             {keyword}
           </button>
         ))}
       </div>
-      <div className="Card-containers grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4 mx-8 text-navy-text dark:text-white">
+      <div className="Card-containers grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4 mx-8 pt-4 pb-16 text-pink-500">
         {comedianList && filteredComedians.map((comedian: ComedianProfile) => (
-            <div className="Comedian-Card shadow-brand-box dark:shadow-brand-box-navy pb-4 lg:pb-0" key={comedian._id}>
+            <div className="Comedian-Card shadow-brand-box pb-4 lg:pb-0" key={comedian._id}>
               <div className="Media pb-4 flex justify-center">
                 <Image
                   src={urlFor(comedian.image).width(480).height(430).fit('crop').crop('top').url()}
