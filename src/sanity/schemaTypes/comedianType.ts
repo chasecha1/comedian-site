@@ -41,11 +41,23 @@ export const comedianType = defineType({
     }),
     defineField({
       name: 'video',
-      title: 'Video URL',
-      type: 'url',
-      validation: Rule => Rule.uri({
-        scheme: ['http', 'https'],
-      }),
+      title: 'Video',
+      type: 'object',
+      fields: [
+        {
+          name: 'url',
+          title: 'Video URL',
+          type: 'url',
+          validation: Rule => Rule.uri({
+            scheme: ['http', 'https'],
+          }),
+        },
+        {
+          name: 'name',
+          title: 'Video Name',
+          type: 'string',
+        },
+      ],
     }),
     defineField({
       name: 'keywords',
