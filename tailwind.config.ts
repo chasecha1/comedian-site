@@ -50,6 +50,9 @@ const config: Config = {
         "dark-button-hover": "#3D547A",
         "light-text-muted": "#868E96",
         "dark-text-muted": "#D1D5DB",
+        "logo-pink": "#EC1D8F",
+        "dark-pink": "#B0186F",
+        "light-pink-bg": "#F9D2E8",
       },
       buttons: (theme: PluginAPI["theme"]): ButtonConfig => ({
         display: "flex",
@@ -226,8 +229,8 @@ const config: Config = {
       },
       boxShadow: {
         "brand-shadow": "0 -1px 0 0 #CCC inset",
-        "brand-box": "0 0 6px 2px rgba(10,10,10,0.05)",
-        "brand-box-navy": "0 0 6px 2px rgba(255, 255, 255, 0.1)",
+        "brand-box": "0 0 6px 2px rgba(10,10,10,0.1)",
+        "brand-box-navy": "0 0 6px 2px rgba(249, 210, 232, 0.1)",
       },
     },
   },

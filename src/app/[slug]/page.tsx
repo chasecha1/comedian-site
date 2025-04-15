@@ -16,7 +16,7 @@ export default async function ComedianPage({ params }: ComedianPageProps) {
   const comedian = data[0]
 
   return (
-    <div className="bg-white dark:bg-light-navy text-navy-text dark:text-white flex flex-col">
+    <div className="bg-pink-50 text-pink-500 flex flex-col">
       <div className="Comedian-Name Heading--head flex justify-center py-8">
         {comedian.name}
       </div>

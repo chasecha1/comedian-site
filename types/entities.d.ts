@@ -15,3 +15,9 @@ export type ComedianProfile = {
   },
   keywords: string[],
 }
+
+export type HeroProfile = {
+  _id: string,
+  image: Image,
+  about: TypedObject[],
+}
