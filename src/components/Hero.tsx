@@ -14,11 +14,11 @@ const Hero = ({heroData} :HeroProps) => {
 
   return(
     <div className="Hero p-5 lg:p-10 xl:p-14">
-        <div className="Hero-title Heading--head text-pink-500 flex justify-center">
+        <div className="Hero-title Heading--head text-pink-500 flex justify-center items-center">
           Our Voice Comedy for Change Comedian Database
         </div>
-        <div className="flex flex-col lg:flex-row bg-white text-black">
-            <div className="Hero-image flex flex-col w-3/4 px-12 lg:px-20">
+        <div className="flex flex-col lg:flex-row bg-white text-black items-center">
+            <div className="Hero-image flex flex-col w-3/4 justify-center sm:px-12 lg:px-20">
               <Image
                 src={urlFor(hero.image).width(480).height(430).fit('crop').crop('top').url()}
                 alt={'Hero image'}
